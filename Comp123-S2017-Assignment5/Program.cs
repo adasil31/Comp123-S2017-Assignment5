@@ -5,8 +5,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 /*Student Name: Alessandro da Silva Santos
  * Student Number: 300927354
- * Creating BMI calculator
- * Project 0.1
+ * creating design of the table
+ * Project 0.2
  * August 03-2017
  * */
 namespace Comp123_S2017_Assignment5
@@ -21,7 +21,7 @@ namespace Comp123_S2017_Assignment5
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new BMICalculator());
         }
     }
 }
