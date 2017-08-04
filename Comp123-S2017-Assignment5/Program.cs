@@ -5,8 +5,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 /*Student Name: Alessandro da Silva Santos
  * Student Number: 300927354
- * creating design of the table
- * Project 0.2
+ * rename the Form name
+ * Project 0.3
  * August 03-2017
  * */
 namespace Comp123_S2017_Assignment5
