@@ -7,7 +7,7 @@ using System.Windows.Forms;
  * Student Number: 300927354
  * rename the Form name
  * Project 0.3
- * August 03-2017
+ * August 04-2017
  * */
 namespace Comp123_S2017_Assignment5
 {
