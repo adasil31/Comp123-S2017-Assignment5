@@ -6,7 +6,7 @@ using System.Windows.Forms;
 /*Student Name: Alessandro da Silva Santos
  * Student Number: 300927354
  * rename the Form name
- * Project 0.4 - Include calculate BMI
+ * Project 0.2 - Started splash form first
  * August 14-2017
  * */
 namespace Comp123_S2017_Assignment5
@@ -21,7 +21,8 @@ namespace Comp123_S2017_Assignment5
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new BMICalculator());
+            Application.Run(new SplashDemo());
+
         }
     }
 }
