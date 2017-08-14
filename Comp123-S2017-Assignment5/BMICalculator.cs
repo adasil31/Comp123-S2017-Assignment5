@@ -39,6 +39,12 @@ namespace Comp123_S2017_Assignment5
 
         private void button1_Click(object sender, EventArgs e)
         {
+            double weight = Convert.ToDouble(WeightBox.Text);
+            double height = Convert.ToDouble(HeightTextBox.Text);
+            double BMI = (height * height)  / weight  ;
+
+
+
 
         }
     }

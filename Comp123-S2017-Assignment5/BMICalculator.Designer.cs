@@ -36,8 +36,8 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.HeightTextBox = new System.Windows.Forms.TextBox();
+            this.WeightBox = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -45,7 +45,7 @@
             // 
             this.button1.Location = new System.Drawing.Point(22, 324);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(126, 40);
+            this.button1.Size = new System.Drawing.Size(126, 30);
             this.button1.TabIndex = 0;
             this.button1.Text = "Check BMI";
             this.button1.UseVisualStyleBackColor = true;
@@ -55,7 +55,7 @@
             // 
             this.button2.Location = new System.Drawing.Point(175, 324);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(91, 44);
+            this.button2.Size = new System.Drawing.Size(91, 30);
             this.button2.TabIndex = 1;
             this.button2.Text = "Reset";
             this.button2.UseVisualStyleBackColor = true;
@@ -116,21 +116,21 @@
             this.label5.Text = "BMI";
             this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
-            // textBox1
+            // HeightTextBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(122, 103);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(120, 28);
-            this.textBox1.TabIndex = 8;
+            this.HeightTextBox.Location = new System.Drawing.Point(122, 103);
+            this.HeightTextBox.Multiline = true;
+            this.HeightTextBox.Name = "HeightTextBox";
+            this.HeightTextBox.Size = new System.Drawing.Size(120, 28);
+            this.HeightTextBox.TabIndex = 8;
             // 
-            // textBox2
+            // WeightBox
             // 
-            this.textBox2.Location = new System.Drawing.Point(122, 38);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(120, 25);
-            this.textBox2.TabIndex = 9;
+            this.WeightBox.Location = new System.Drawing.Point(122, 38);
+            this.WeightBox.Multiline = true;
+            this.WeightBox.Name = "WeightBox";
+            this.WeightBox.Size = new System.Drawing.Size(120, 25);
+            this.WeightBox.TabIndex = 9;
             // 
             // label6
             // 
@@ -147,8 +147,8 @@
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(296, 416);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.WeightBox);
+            this.Controls.Add(this.HeightTextBox);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -179,8 +179,8 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox HeightTextBox;
+        private System.Windows.Forms.TextBox WeightBox;
         private System.Windows.Forms.Label label6;
     }
 }

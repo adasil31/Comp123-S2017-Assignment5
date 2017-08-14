@@ -6,8 +6,8 @@ using System.Windows.Forms;
 /*Student Name: Alessandro da Silva Santos
  * Student Number: 300927354
  * rename the Form name
- * Project 0.3
- * August 04-2017
+ * Project 0.4 - Include calculate BMI
+ * August 14-2017
  * */
 namespace Comp123_S2017_Assignment5
 {
