@@ -12,6 +12,8 @@ namespace Comp123_S2017_Assignment5
 {
     public partial class BMICalculator : Form
     {
+        string radio;
+
         public BMICalculator()
         {
             InitializeComponent();
@@ -34,18 +36,60 @@ namespace Comp123_S2017_Assignment5
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            WeightBox.Text = "0";
+            HeightTextBox.Text = "0";
+            ResultTextBox.Text = "0";
+            YouareTextBox.Text = "";
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
+
             double weight = Convert.ToDouble(WeightBox.Text);
             double height = Convert.ToDouble(HeightTextBox.Text);
-            double BMI = (height * height)  / weight  ;
+            double BMI = 0;
 
+            if (radio == "Metric")
+            {
+                //Calculate the metric system //
+                BMI = (height * height) / weight;
+            }
+            else if (radio == "Imperial")
+            {
+                //calculate imperial system //
+                BMI = (weight * 703) / (height * height);
+            }
 
+            ResultTextBox.Text = Convert.ToString(BMI);
 
+            if (BMI > 18.5)
+            {
+                YouareTextBox.Text = "Underweight";
+            }
+            else if (BMI > 24.9)
+            {
+                YouareTextBox.Text = "Normal";
+            }
 
+            if(BMI > 29.9)
+            {
+                YouareTextBox.Text = "Overweight";
+            }
+            else if (BMI > 30)
+            {
+                YouareTextBox.Text = "Obese";
+            }
+
+        }
+
+        private void MetricRadioButton_CheckedChanged(object sender, EventArgs e)
+        {
+            this.radio = "Metric";
+        }
+
+        private void ImperialRadioButton_CheckedChanged(object sender, EventArgs e)
+        {
+            this.radio = "Imperial";
         }
     }
 }
