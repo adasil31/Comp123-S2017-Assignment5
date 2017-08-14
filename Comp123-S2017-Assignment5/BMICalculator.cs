@@ -7,12 +7,21 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+/*Student Name: Alessandro da Silva Santos
+ * Student Number: 300927354
+ * rename the Form name
+ * Description: 0.4 - Include calculate BMI
+ * August 14-2017
+ * */
 
 namespace Comp123_S2017_Assignment5
 {
     public partial class BMICalculator : Form
     {
         string radio;
+        /// <summary>
+        /// In this space is create the constructor of the BMI Calculator
+        /// </summary>
 
         public BMICalculator()
         {
@@ -36,9 +45,9 @@ namespace Comp123_S2017_Assignment5
 
         private void button2_Click(object sender, EventArgs e)
         {
-            WeightBox.Text = "0";
-            HeightTextBox.Text = "0";
-            ResultTextBox.Text = "0";
+            WeightBox.Text = "";
+            HeightTextBox.Text = "";
+            ResultTextBox.Text = "";
             YouareTextBox.Text = "";
         }
 
@@ -90,6 +99,12 @@ namespace Comp123_S2017_Assignment5
         private void ImperialRadioButton_CheckedChanged(object sender, EventArgs e)
         {
             this.radio = "Imperial";
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+
         }
     }
 }

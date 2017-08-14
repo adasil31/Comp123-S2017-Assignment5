@@ -45,7 +45,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(33, 452);
+            this.button1.Location = new System.Drawing.Point(29, 452);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(126, 53);
             this.button1.TabIndex = 0;
@@ -71,6 +71,7 @@
             this.button3.TabIndex = 2;
             this.button3.Text = "Exit";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // WeightLabel
             // 
@@ -93,7 +94,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(24, 190);
+            this.label3.Location = new System.Drawing.Point(24, 183);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(99, 25);
             this.label3.TabIndex = 5;
@@ -102,7 +103,7 @@
             // YouAreLabel
             // 
             this.YouAreLabel.AutoSize = true;
-            this.YouAreLabel.Location = new System.Drawing.Point(48, 333);
+            this.YouAreLabel.Location = new System.Drawing.Point(24, 333);
             this.YouAreLabel.Name = "YouAreLabel";
             this.YouAreLabel.Size = new System.Drawing.Size(86, 25);
             this.YouAreLabel.TabIndex = 6;
@@ -110,21 +111,21 @@
             // 
             // HeightTextBox
             // 
-            this.HeightTextBox.Location = new System.Drawing.Point(122, 103);
+            this.HeightTextBox.Location = new System.Drawing.Point(122, 99);
             this.HeightTextBox.Name = "HeightTextBox";
             this.HeightTextBox.Size = new System.Drawing.Size(285, 29);
             this.HeightTextBox.TabIndex = 8;
             // 
             // WeightBox
             // 
-            this.WeightBox.Location = new System.Drawing.Point(122, 38);
+            this.WeightBox.Location = new System.Drawing.Point(122, 37);
             this.WeightBox.Name = "WeightBox";
             this.WeightBox.Size = new System.Drawing.Size(285, 29);
             this.WeightBox.TabIndex = 9;
             // 
             // ResultTextBox
             // 
-            this.ResultTextBox.Location = new System.Drawing.Point(122, 195);
+            this.ResultTextBox.Location = new System.Drawing.Point(122, 179);
             this.ResultTextBox.Name = "ResultTextBox";
             this.ResultTextBox.Size = new System.Drawing.Size(285, 29);
             this.ResultTextBox.TabIndex = 11;
@@ -132,7 +133,7 @@
             // MetricRadioButton
             // 
             this.MetricRadioButton.AutoSize = true;
-            this.MetricRadioButton.Location = new System.Drawing.Point(33, 270);
+            this.MetricRadioButton.Location = new System.Drawing.Point(29, 270);
             this.MetricRadioButton.Name = "MetricRadioButton";
             this.MetricRadioButton.Size = new System.Drawing.Size(90, 29);
             this.MetricRadioButton.TabIndex = 12;
@@ -144,7 +145,7 @@
             // ImperialRadioButton
             // 
             this.ImperialRadioButton.AutoSize = true;
-            this.ImperialRadioButton.Location = new System.Drawing.Point(263, 270);
+            this.ImperialRadioButton.Location = new System.Drawing.Point(205, 270);
             this.ImperialRadioButton.Name = "ImperialRadioButton";
             this.ImperialRadioButton.Size = new System.Drawing.Size(105, 29);
             this.ImperialRadioButton.TabIndex = 13;
@@ -155,10 +156,10 @@
             // 
             // YouareTextBox
             // 
-            this.YouareTextBox.Location = new System.Drawing.Point(168, 333);
+            this.YouareTextBox.Location = new System.Drawing.Point(126, 333);
             this.YouareTextBox.Multiline = true;
             this.YouareTextBox.Name = "YouareTextBox";
-            this.YouareTextBox.Size = new System.Drawing.Size(239, 99);
+            this.YouareTextBox.Size = new System.Drawing.Size(281, 99);
             this.YouareTextBox.TabIndex = 14;
             // 
             // BMICalculator
