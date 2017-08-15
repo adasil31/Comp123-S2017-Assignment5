@@ -22,7 +22,11 @@ namespace Comp123_S2017_Assignment5
         {
             InitializeComponent();
         }
-
+        /// <summary>
+        /// This is the event handler for the "Tick"
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void SplashDemo_Load(object sender, EventArgs e)
         {
 
@@ -30,7 +34,10 @@ namespace Comp123_S2017_Assignment5
 
         private void SplashDemoTimer_Tick(object sender, EventArgs e)
         {
-
+            BMICalculator BMICalculator = new BMICalculator();
+            BMICalculator.Show();
+            this.Hide();
+            SplashDemoTimer.Enabled = false; //turn time off.
         }
     }
 }

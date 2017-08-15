@@ -10,7 +10,7 @@ using System.Windows.Forms;
 /*Student Name: Alessandro da Silva Santos
  * Student Number: 300927354
  * rename the Form name
- * Description: 0.4 - Include calculate BMI
+ * Description: 0.5 -  handedly event to form closing
  * August 14-2017
  * */
 
@@ -104,6 +104,15 @@ namespace Comp123_S2017_Assignment5
         private void button3_Click(object sender, EventArgs e)
         {
             Application.Exit();
+
+        }
+        /// <summary>
+        /// This is the handedly event to form closing
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void BMICalculator_FormClosing(object sender, FormClosingEventArgs e)
+        {
 
         }
     }
