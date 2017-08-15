@@ -61,26 +61,26 @@ namespace Comp123_S2017_Assignment5
             if (radio == "Metric")
             {
                 //Calculate the metric system //
-                BMI = (height * height) / weight;
+                BMI =   weight / (height * height);
             }
             else if (radio == "Imperial")
             {
                 //calculate imperial system //
                 BMI = (weight * 703) / (height * height);
             }
-
+            //create the BMI scale//
             ResultTextBox.Text = Convert.ToString(BMI);
 
-            if (BMI > 18.5)
+            if (BMI < 18.5)
             {
                 YouareTextBox.Text = "Underweight";
             }
-            else if (BMI > 24.9)
+            else if ((BMI >= 18.5) && (BMI < 25))
             {
                 YouareTextBox.Text = "Normal";
             }
 
-            if(BMI > 29.9)
+            else if ((BMI >= 25) && (BMI < 30))
             {
                 YouareTextBox.Text = "Overweight";
             }
