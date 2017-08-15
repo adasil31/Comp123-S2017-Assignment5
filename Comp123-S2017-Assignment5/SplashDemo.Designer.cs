@@ -28,8 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SplashDemo));
             this.label1 = new System.Windows.Forms.Label();
+            this.SplashDemoTimer = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // label1
@@ -41,6 +43,12 @@
             this.label1.Size = new System.Drawing.Size(223, 25);
             this.label1.TabIndex = 0;
             this.label1.Text = "MY BMI CALCULATOR";
+            // 
+            // SplashDemoTimer
+            // 
+            this.SplashDemoTimer.Enabled = true;
+            this.SplashDemoTimer.Interval = 3000;
+            this.SplashDemoTimer.Tick += new System.EventHandler(this.SplashDemoTimer_Tick);
             // 
             // SplashDemo
             // 
@@ -65,5 +73,6 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Timer SplashDemoTimer;
     }
 }
