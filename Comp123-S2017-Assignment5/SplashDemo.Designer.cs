@@ -38,7 +38,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label1.Location = new System.Drawing.Point(32, 40);
+            this.label1.Location = new System.Drawing.Point(57, 54);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(223, 25);
             this.label1.TabIndex = 0;

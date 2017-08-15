@@ -113,6 +113,7 @@ namespace Comp123_S2017_Assignment5
         /// <param name="e"></param>
         private void BMICalculator_FormClosing(object sender, FormClosingEventArgs e)
         {
+            Application.Exit();
 
         }
     }

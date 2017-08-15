@@ -10,14 +10,29 @@ using System.Windows.Forms;
 /*Student Name: Alessandro da Silva Santos
  * Student Number: 300927354
  * rename the Form name
- * Project 0.1 - Created SplashForm Demo.
+ * Project 0.3 - Created a public property at BMICalculator.
  * August 14-2017
  * */
 
 namespace Comp123_S2017_Assignment5
 {
     public partial class SplashDemo : Form
-    {
+        {
+        //private instance variable 
+        //Constructors 
+
+        private BMICalculator _BMICalculator;
+        //Public properties 
+        public BMICalculator BMICalculator {
+
+            get
+            {
+                return Program.BMICalculator;
+            }
+
+        }
+         
+
         public SplashDemo()
         {
             InitializeComponent();
@@ -34,8 +49,9 @@ namespace Comp123_S2017_Assignment5
 
         private void SplashDemoTimer_Tick(object sender, EventArgs e)
         {
-            BMICalculator BMICalculator = new BMICalculator();
-            BMICalculator.Show();
+
+            this.BMICalculator.Show();
+
             this.Hide();
             SplashDemoTimer.Enabled = false; //turn time off.
         }
